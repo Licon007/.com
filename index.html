@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Designer</title>
+    <link rel="stylesheet" href="andere/index.css">
+    <link rel="icon" href="Ativo 2@3zz.png" type="image/x-icon" class="iconn">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bungee&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&family=Permanent+Marker&family=Russo+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="particulas"></div>
+    <nav class="navegacao">
+
+        <a href="#" class="logo">
+            <img src="andere/logo text big designeer.png" alt="logo" height="28" width="180">
+        </a>
+        <ul class="menu">
+
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contactos" class="menu-link">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="andere/Logo app de roupas.jpg" alt="foto de Licon Abrão" class="foto-perfil">
+        <h3>Licon Abrão Nhatave</h3>
+        <p class="cabecalho-sub-titulo">Master Designer</p>
+
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre <span>mim</span></h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">Eu sou <span>Licon Abrão Nhatave</span>, um aspirante a designer de mídia com
+                grande interesse em
+                design digital e impresso.
+                Trabalho com a Adobe Creative Cloud e tenho experiência na criação de
+                layouts, gráficos e conteúdos visuais para diversas mídias.
+                Além de design impresso e digital, possuo conhecimentos em Figma, bem como
+                conhecimentos básicos de modelagem 3D com Blender.
+                Interesso-me por processos de design modernos e pela implementação eficiente
+                de ideias criativas.
+                Meu objetivo é desenvolver ainda mais as minhas competências através de formação profissional
+                e ganhar experiência prática em um ambiente profissional.
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <link rel="stylesheet" href="print.css" media="print">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="andere/App.svg" alt="projeto-1" class="projeto-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">App de Roupas e Acessórios</h3>
+                    <p class="paragrafo">Design de interface (UI/UX) para um aplicativo de e-commerce de moda.
+                        Foco na criação de uma jornada do cliente intuitiva com estética moderna
+                        e navegação fluida para maximizar a conversão.
+                    </p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="andere/5972420_21752 [Convertido].jpg" alt="projeto-2" class="projeto-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Identidade Visual</h3>
+                    <p class="paragrafo">Desenvolvimento completo de marca para uma marca de café artesanal. O projeto
+                        inclui a criação do logotipo, bem como a aplicação em embalagens, roupas de trabalho e
+                        papelaria corporativa.
+                    </p>
+                </div>
+            </div>
+            <div class="projetos-card">
+                <img src="andere/book.svg" alt="projeto-3" class="projeto-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Livro de Apresentação</h3>
+                    <p class="paragrafo">No design deste material institucional, o desafio foi
+                        unir a fotografia industrial com textos técnicos, criando uma hierarquia visual clara
+                        e, ao mesmo tempo, vibrante.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contactos" class="contactos">
+        <h2 class="contactos-titulo">Entrar em contacto</h2>
+
+        <form class="formalario-contactos" id="formulario" onsubmit="enviarwhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Seu nome" class="campo-form" id="nome" type="text">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="button-formulario">Enviar WhatsApp</button>
+        </form>
+
+    </section>
+    <script>
+
+        function enviarwhats(event) {
+            event.preventDefault()
+
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '258869841457';
+
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+            const msgformatada = encodeURIComponent(texto);
+
+            const url = `https://api.whatsapp.com/send?phone=${telefone}&text=${msgformatada}`;
+
+            window.open(url, '_blank');
+
+        }
+    </script>
+
+</body>
+
+</html>
