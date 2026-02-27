@@ -1,0 +1,52 @@
+@media (max-width: 600px) {
+    .projetos-caixa  {
+        display: flex;
+        
+        flex-direction: column;
+        align-items: center;
+        margin: 0 40px;
+
+    }
+    .cabecalho {
+    background: url(./cappa\ site\ cell.svg);
+    background-position: center;
+    background-size: cover;
+
+}
+    .foto-perfil {
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+    animation: flutuar 5s ease-in-out infinite;
+}
+h3 {
+    font-size: 1.2rem;
+    color: var(--claro);
+    font-weight: bold;
+    margin: 10px;
+
+}
+
+.cabecalho-sub-titulo {
+    font-size: 1rem;
+    color: var(--claro);
+}
+    .formalario-contactos {
+    max-width: 150px 200px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 1.5rem;
+    border: 1px solid var(--vidro);
+    border-radius: 5px;
+}
+.sobre {
+    padding: 10rem 2rem;
+    background: url("./Capa\ site\ Sobre\ cell.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+}
