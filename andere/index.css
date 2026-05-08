@@ -225,6 +225,38 @@ h3 {
     font-size: 0.8rem;
 }
 
+.Avaliações {
+    background-color: #5c5ce9;
+    padding: 3rem ;
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(5rem,1fr));
+    gap: 1.5rem;
+}
+
+.Avaliações .box-container .box {
+    border-color: #f9f9f9;
+    text-align: center;
+    padding: 1.5rem 1rem;
+}
+
+.Avaliações .box-container .box p {
+    font-size: 1rem;
+    color: #13131a;
+    padding: 1rem 0;
+    line-height: 1.8; 
+}
+
+.Avaliações .box-container .box img {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+}
+
+
+
 .contactos {
     padding: 6rem 2rem;
     background-color: #0f172a;
