@@ -42,20 +42,30 @@
             <li>
                 <a href="#contactos" class="menu-link">Contacto</a>
             </li>
+
         </ul>
+
     </nav>
 
     <main id="inicio" class="cabecalho">
-        <img src="andere/Logo app de roupas.jpg" alt="foto de Licon Abrão" class="foto-perfil">
+        <img src="andere/fundo-cinzento-da-cor-do-sumario-animal-da-textura-da-pele-do-elefante_42510-77.jpg"
+            alt="foto de Licon Abrão" class="foto-perfil">
         <h3>Licon Abrão Nhatave</h3>
         <p class="cabecalho-sub-titulo">Master Designer</p>
+        <div class="cabecalho1">
+            <video class="video-fundo" autoplay muted loop playsinline>
+                <source src="./andere/9903000-uhd_2160_4096_25fps.mp4" type="video/mp4">
+            </video>
+
+            <!-- seu conteúdo existente aqui -->
+        </div>
 
     </main>
 
     <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre <span>mim</span></h2>
         <div class="sobre-caixa">
-             <p class="sobre-paragrafo">Eu sou <span>Licon Abrão Nhatave</span>, (Designer de Mídia focado em Inovação e
+            <p class="sobre-paragrafo">Eu sou <span>Licon Abrão Nhatave</span>, (Designer de Mídia focado em Inovação e
                 Performance)
                 Como designer de mídia, meu objetivo é liderar a execução de projetos que definem a identidade visual de
                 marcas modernas. Tenho sólida experiência na criação de conteúdos multidisciplinares, transitando com
@@ -104,31 +114,16 @@
         </div>
     </section>
 
-    <section id="contactos" class="contactos">
-        <h2 class="contactos-titulo">Entrar em contacto</h2>
-
-        <form class="formalario-contactos" id="formulario" onsubmit="enviarwhats(event)">
-            <div class="grupo-form">
-                <input placeholder="Seu nome" class="campo-form" id="nome" type="text">
-            </div>
-            <div class="grupo-form">
-                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem"></textarea>
-            </div>
-            <button type="submit" class="button-formulario">Enviar WhatsApp</button>
-        </form>
-
-    </section>
-
-     <div class="Avaliações">
+    <div class="Avaliações">
         <section class="Avaliações" id="Avaliações">
             <h2 class="projetos-titulo">Nossos Clientes</h2>
 
             <div class="box-container">
                 <div class="box">
                     <img src="./andere/icons8-comment-60.png" alt="comentario" class="comentario">
-                    <p>"O Colégio Kimberly superou todas as minhas expectativas. A combinação do currículo nacional com
-                        o prestigiado currículo Cambridge oferece uma base sólida e global para o futuro acadêmico dos
-                        alunos. É, sem dúvida, uma referência em Moçambique."</p>
+                    <p>"Trabalhar com ele foi uma virada de chave para o nosso negócio. É um designer completo e vasto,
+                        que domina desde a identidade visual até peças criativas complexas. Superou todas as
+                        expectativas e entregou um resultado impecável."</p>
                     <img src="./images (3).png" alt="Foto-cliente">
                     <h3>Huberto Luiz</h3>
                     <div class="stars">
@@ -145,11 +140,11 @@
                     </div>
                 </div>
                 <div class="box">
-                    <img src="./andere/icons8-comment-60.png" alt="comentario">
-                    <p>"As instalações são modernas e os professores extremamente dedicados. Minha filha adora as aulas
-                        de Taekwondo e natação. É gratificante ver o desenvolvimento dela em um ambiente que valoriza
-                        tanto o rigor académico quanto o desporto."</p>
-                    <img src="./images (3).png" alt="Foto-cliente">
+                    <img src="./andere/icons8-comment-60.png" alt="comentario" class="comentario">
+                    <p>"A versatilidade e a criatividade dele são impressionantes. Ele consegue transitar por diferentes
+                        estilos e entregar layouts modernos, limpos e altamente atraentes. Uma visão estética refinada
+                        que valoriza qualquer projeto."</p>
+                    <img src="./images (3).png" alt="Foto-cliente" class="foto-cliente">
                     <h3>Valdez Ivo</h3>
                     <div class="stars">
                         <img width="30" height="30" src="https://img.icons8.com/material/24/star--v1.png"
@@ -166,9 +161,9 @@
                 </div>
                 <div class="box">
                     <img src="./andere/icons8-comment-60.png" alt="comentario">
-                    <p>"O que mais me impressiona é o foco no desenvolvimento integral. Além da excelente infraestrutura
-                        de laboratórios e artes, o colégio cultiva valores que preparam os jovens para os desafios da
-                        vida real. Um ambiente seguro e inovador."</p>
+                    <p>"O que mais me impressiona é a sua capacidade estratégica. Não entrega apenas um design bonito,
+                        mas soluções visuais inteligentes que comunicam de verdade com o público. Entrega rápida,
+                        profissional e de altíssimo nível."</p>
                     <img src="./images (3).png" alt="Foto-cliente">
                     <h3>Ribeiro dos Santos</h3>
                     <div class="stars">
@@ -187,7 +182,22 @@
             </div>
         </section>
     </div>
-    
+
+    <section id="contactos" class="contactos">
+        <h2 class="contactos-titulo">Entrar em contacto</h2>
+
+        <form class="formalario-contactos" id="formulario" onsubmit="enviarwhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Seu nome" class="campo-form" id="nome" type="text">
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua mensagem" rows="6" id="mensagem"></textarea>
+            </div>
+            <button type="submit" class="button-formulario">Enviar WhatsApp</button>
+        </form>
+
+    </section>
+
     <script>
 
         function enviarwhats(event) {
@@ -195,7 +205,7 @@
 
             const nome = document.getElementById('nome').value;
             const mensagem = document.getElementById('mensagem').value;
-            const telefone = '258869841457';
+            const telefone = '258871867072';
 
             const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
             const msgformatada = encodeURIComponent(texto);
@@ -208,5 +218,4 @@
     </script>
 
 </body>
-
 </html>
